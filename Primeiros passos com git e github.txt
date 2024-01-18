@@ -1,0 +1,32 @@
+Iniciar o repositorio
+	PS C:\DIO\Git Teste> git init
+	Initialized empty Git repository in C:/DIO/Git Teste/.git/
+
+Adicionar alterações . == todas
+	PS C:\DIO\Git Teste> git add .
+
+Fazer o commit com descrição
+	PS C:\DIO\Git Teste> git commit -m "Pirmeiro commit"
+	[master (root-commit) f65711b] Pirmeiro commit
+	1 file changed, 1 insertion(+)
+	create mode 100644 sample.js
+ 
+Criar um branch
+	PS C:\DIO\Git Teste> git branch -M main
+
+Adicionando link de origen
+	PS C:\DIO\Git Teste> git remote add origin https://github.com/MuitoGenerico/repo-teste.git
+
+Puxando alterações
+	PS C:\DIO\Git Teste> git push -u origin main
+	Enumerating objects: 5, done.
+	Counting objects: 100% (5/5), done.
+	Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+	Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+	To https://github.com/MuitoGenerico/repo-teste.git
+		f65711b..9e8676a  main -> main
+	branch 'main' set up to track 'origin/main'.
+
+Atualizando branch
+	PS C:\DIO\Git Teste> git pull
+	Already up to date.
